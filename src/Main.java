@@ -15,6 +15,18 @@ public class Main {
         //Для iOS — «Установите версию приложения для iOS по ссылке».
         //Для Android — «Установите версию приложения для Android по ссылке».
         //Объявите переменную clientOS, которая равна 0 или 1 (0 — iOS, 1 — Android).
+
+        int clientOS = 0;
+
+        if (clientOS==0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS==1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Выберите ОС: iOS или Android");
+        }
+
+
     }
 
     public static void task2() {
