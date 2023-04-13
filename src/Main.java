@@ -66,6 +66,22 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
 
+        int deliveryDistance = 195;
+        int deliveryDay = 1;
+
+        if (deliveryDistance <= 20) {
+            deliveryDay = deliveryDay + 0;
+            System.out.println("Потребуется дней: " + deliveryDay);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryDay = deliveryDay + 1;
+            System.out.println("Потребуется дней: " + deliveryDay);
+        } else if (deliveryDistance > 60 && deliveryDistance <=100) {
+            deliveryDay = deliveryDay + 2;
+            System.out.println("Потребуется дней: " + deliveryDay);
+        }
+        else System.out.println("Свыше 100 км доставки нет.");
+
+
     }
 
     public static void task5() {
