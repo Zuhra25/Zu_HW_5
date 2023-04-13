@@ -22,17 +22,9 @@ public class Main {
 
     public static void task2() {
         System.out.println("Задача 2");
-
-        //Если год выпуска ранее 2015 года, то к сообщению об установке нужно добавить информацию об облегченной версии:
-        //
-        //Для iOS оно будет звучать так: «Установите облегченную версию приложения для iOS по ссылке».
-        //Для Android: «Установите облегченную версию приложения для Android по ссылке».
-        //Для пользователей телефонов 2015 года выпуска и позже нужно вывести обычное предложение об установке приложения.
-        //
-        //Важно: вложенность больше двух этажей не допускается (условный оператор внутри условного оператора).
         int clientDeviceYear = 2015;
         int clientOS = 1;
-        int clientDevice = 2020;
+        int clientDevice = 2000;
 
         switch (clientOS) {
             case 0:
@@ -51,12 +43,24 @@ public class Main {
                     break;
                 }
         }
-
     }
 
     public static void task3() {
         System.out.println("Задача 3");
+        int year = 2100;
+        boolean leapYear = false;
 
+        if (year % 4 == 0 && year % 400 == 0)
+        leapYear = true;
+        else if (year % 100 == 0) {
+            leapYear = false;
+        }
+        else leapYear = false;
+
+        if (leapYear)
+        System.out.println(year + " год является високосным");
+        else
+        System.out.println(year + " год НЕ является високосным");
     }
 
     public static void task4() {
